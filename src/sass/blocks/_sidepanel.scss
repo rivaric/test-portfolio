@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 340px;
+    height: 350px;
     width: 24px;
     z-index: 3;
     &__divider {
@@ -23,6 +23,8 @@
         height: 150px;
         width: 25px;
         span {
+            font-weight: bold;
+            font-size: 16px;
             transform: rotate(-90deg) translate(-30%, -63px);
             display: block;
             width: 150px;
