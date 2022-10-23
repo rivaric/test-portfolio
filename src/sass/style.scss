@@ -11,8 +11,10 @@
 @import 'blocks/skillse';
 @import 'blocks/portfolio';
 @import 'blocks/price';
+@import 'blocks/contacts';
 
 * {
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
