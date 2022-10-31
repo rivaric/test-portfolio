@@ -2,6 +2,16 @@
     .sidepanel {
         display: none;
     }
+    .skillse {
+        &__stek {
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
+        }
+    }
+    .levels {
+        grid-template-columns: repeat(auto-fit, 270px);
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -19,6 +29,43 @@
             &-item {
                 grid-template-columns: 40px 180px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 350px);
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 20px;
+            .horizonal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts {
+        &__photo {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__descr {
+            width: 200px;
+        }
+        &__wrapper {
+            column-gap: 30px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/repeat(2,210px);
+            justify-content: left;
+            column-gap: 20px;
         }
     }
 }
@@ -45,6 +92,33 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(2, 230px);
+        }
+    }
+    .price {
+        &__items {
+            grid-template-columns: repeat(auto-fit, 320px);
+            padding: 0;
+        }
+    }
+    .contacts {
+        &__photo {
+            display: none;
+        }
+        &__descr {
+            width: 630px;
+        }
+        &__wrapper {
+            grid-template-columns: 630px;
+            justify-content: center;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/repeat(2,280px);
+            justify-content: space-between;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -62,6 +136,51 @@
             width: 300px;
         }
     }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 340px auto auto / 100%;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 250px);
+            &-item {
+                grid-template-columns: 40px 220px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 400px;
+            row-gap: 60px;
+        }
+    }
+    .skillse {
+        &__stek {
+            justify-content: center;
+        }
+    }
+    .levels {
+        justify-content: center;
+    }
+    .contacts {
+        &__photo {
+            display: none;
+        }
+        &__descr {
+            width: 330px;
+        }
+        &__wrapper {
+            grid-template-columns: 530px;
+            justify-content: center;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/repeat(2,220px);
+            justify-content: left;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -72,6 +191,9 @@
     .title {
         &_fz48 {
             font-size: 26px;
+        }
+        &_fz32 {
+            font-size: 24px;
         }
         &_fz36 {
             font-size: 24px;
@@ -101,10 +223,42 @@
             grid-row: unset;
         }
         &__skills {
-            grid-template-columns: 1fr;
+            grid-template-columns: 260px;
+            justify-content: center;
             &-item {
                 grid-template-columns: 40px 220px;
             }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 280px;
+            row-gap: 60px;
+            justify-content: center;
+        }
+    }
+    .price {
+        &__items {
+            grid-template-columns: repeat(auto-fit, 275px);
+            padding-left: 20px;
+            justify-content: center;
+        }
+    }
+    .contacts {
+        &__descr {
+            width: 300px;
+            margin: 0 auto;
+        }
+        &__wrapper {
+            display: block;
+            padding-left: 0;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+        &__input {
+            height: 40px;
         }
     }
 }
